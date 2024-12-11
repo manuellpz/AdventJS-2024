@@ -1,7 +1,7 @@
 const inventory = [
   { name: 'book', quantity: 10, category: 'education' },
   { name: 'book', quantity: 5, category: 'education' },
-  { name: 'paint', quantity: 3, category: 'art' }
+  { name: 'paint', quantity: 3, category: 'art' },
 ];
 
 let organized = {};
@@ -10,7 +10,8 @@ let items = {};
 
 inventory.forEach((el) => {
   let { category } = el;
-  organized = { ...organized, [category]: {} };
+  
+    organized = { ...organized, [category]: {} };
 });
 
 inventory.forEach((el) => {
